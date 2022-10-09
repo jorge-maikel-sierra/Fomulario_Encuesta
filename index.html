@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Formulario de encuesta</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
             <h1 id="tittle" class="text-center">Jorge Sierra Formulario De Encuesta</h1>
             <p id="description" class="description text-center">
-                Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.
+                Gracias por tomarse el tiempo para ayudarme a mejorar.
             </p>
         </header>
         <form id="survey-form">
@@ -29,7 +29,7 @@
                 <input type="number" name="age" min="10" max="99" id="number" class="form-control" placeholder="Años">
             </div>
             <div class="form-group">
-                <p>¿Qué opción describe mejor su función actual?</p>
+                <p>¿Qué opción describe mejor tu función actual?</p>
                 <select name="role" id="dropdown" class="form-control" required>
                     <option disabled selected value>Seleccione el rol actual</option>
                     <option value="student">Estudiante</option>
@@ -40,7 +40,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <p>¿Recomendarías freeCodeCamp a un amigo?</p>
+                <p>¿Recomendarías a Jorge a un amigo?</p>
                 <label>
                     <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>Definitivamente
                 </label>
@@ -48,16 +48,59 @@
                 <label><input type="radio" value="not-sure" name="user-recommend" class="input-radio">No estoy seguro</label>
             </div>
             <div class="form-group">
-                <p>¿Cuál es tu función favorita de freeCodeCamp?</p>
+                <p>¿En que area crees que me desenpeño mejor?</p>
                 <select name="mostLike" id="most-like" class="form-control" required>
                     <option value disabled selected>Seleccione una opción</option>
-                    <option value="challenges">Desafíos</option>
-                    <option value="projects">Proyectos</option>
+                    <option value="challenges">Desarrollador</option>
+                    <option value="projects">Diseñador</option>
                     <option value="community">Comunidad</option>
                     <option value="openSource">Fuente abierta</option>
                 </select>
             </div>
-            
+            <div class="form-group">
+                <p>
+                    ¿Qué crees que puedo mejorar?
+                    <span class="clue">(Marque todo lo que corresponda)</span>   
+                </p>
+                <label>
+                    <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">
+                    Proyectos front-end</label>
+                <label>
+                    <input type="checkbox" value="back.end-projects" name="prefer" class="input-checkbox">Proyectos de back-end
+                </label>
+                <label>
+                    <input type="checkbox" value="data-visualization" name="prefer" class="input-checkbox">Visualización de datos
+                </label>
+                <label>
+                    <input type="checkbox" value="challenges" name="prefer" class="input-checkbox">Desafíos
+                </label>   
+                <label>
+                    <input type="checkbox" value="open-source-community" name="prefer" class="input-checkbox">Comunidad de código abierto
+                </label>  
+                <label>
+                    <input type="checkbox" value="gitter-help-rooms" name="prefer" class="input-checkbox">Salas de ayuda de Gitter
+                </label> 
+                <label>
+                    <input type="checkbox" value="videos" name="prefer" class="input-checkbox">Videos
+                </label>
+                <label>
+                    <input type="checkbox" value="wiki" name="prefer" class="input-checkbox">Wiki
+                </label>  
+                <label>
+                    <input type="checkbox" value="forum" name="prefer" class="input-checkbox">Foro
+                </label>  
+                <label>
+                    <input type="checkbox" value="Additional-courses" name="prefer" class="input-checkbox">Cursos adicionales
+                </label>          
+            </div>
+            <div class="form-group">
+                <p>¿Algún comentario o sugerencia?</p>
+                <textarea name="comment" id="comments" name="comment" placeholder="Escribe aquí tu comentario..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Enviar</button>
+            </div>
+
         </form>
     </div>
     
